@@ -1,19 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+    <MapLayer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import 'ol/ol.css';
+import MapLayer from './components/MapLayer.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MapLayer,
   }
-}
+  }
+
 </script>
 
 <style>
